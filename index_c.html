@@ -1,0 +1,36 @@
+<!-- Author: Dau Lam -->
+<!-- Note: Compound Interest Calculator, submits to calc.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Compound Calculator</title>
+	<style type="text/css">
+		body { 	margin: 0 20px; }
+		form { 	padding: 10px; }
+	</style>
+</head>
+<body>
+	<h1>Compound Interest Calculator</h1>
+	<p>Use this calculator to determine how much your money can grow using the power of compound interest.</p>
+	<form name="calcForm" action="calc.php" method="get">
+		<label for="principal">Current Principal:</label>
+		<input type="number" name="principal" required> </br>
+
+		<label for="addition">Monthly Addition:</label>
+		<input type="number" name="addition"> </br>
+
+		<label for="time">Time (years to grow):</label>
+		<input type="number" name="time" required> </br>
+
+		<label for="rate">Interest Rate:</label>
+		<input type="number" name="rate" placeholder="%" required> </br>
+
+		<label for="compound">Compound Interest (per year):</label>
+		<input type="number" name="compound" required> </br>
+
+		<input type="submit" value="Calculate">
+		<input type="reset" value="Reset">
+	</form>
+</body>
+</html>
