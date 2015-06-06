@@ -9,28 +9,8 @@
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<!-- Main JS file -->
 	<script src="main.js"></script>
-	<!-- jQuery functions -->
-	<script>
-		// do these when Document is ready
-		$(function() {
-		  openModal();
-		  closeModal();
-		  modalStopProp();
-
-		  /* below are some tests to ensure the correct node are being targeted */
-		  $(".class0").find("div.class1-2[id*=id1]").css("color", "pink");
-		  $(".class0").find("input.class1[id^=id1-]").css({padding:"10px", color:"red"});
-		});
-	</script>
 </head>
 <body>
-	<!-- Test -->
-	<div class="class0">
-		<div class="class1-1">Hello -no id</div>
-		<div class="class1-2" id="id1-1">I'm Pink -id1-1</div>
-		<input class="class1" id="id1-2" type="text" placeholder="id1-2" />
-		<input class="class1" id="id1-3" type="text" placeholder="id1-3" />
-	</div>
 
 	<!-- 3 Sample Modals -->
 	<div class="modal">
@@ -56,6 +36,8 @@
 	  </div>
 	</div>
 
+	</br> 
+
 	<div class="modal">
 	  <label for="modal-2">
 	    <div class="modal-trigger">Job #2 - Account Executive</div>
@@ -78,6 +60,8 @@
 	    </div>
 	  </div>
 	</div>
+
+	</br>
 	
 	<div class="modal">
 	  <label for="modal-3">
@@ -101,6 +85,8 @@
 	    </div>
 	  </div>
 	</div>
+
+	</br>
 
 </body>
 </html>

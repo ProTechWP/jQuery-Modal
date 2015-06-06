@@ -1,3 +1,9 @@
+$(function() {
+		  openModal();
+		  closeModal();
+		  modalStopProp();
+});
+
 /* function to open modals when clicked */
 function openModal() {
 	$(".modal").on("change", function() {
