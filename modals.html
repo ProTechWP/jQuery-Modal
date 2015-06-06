@@ -1,0 +1,106 @@
+<!-- Author: Dau Lam -->
+<!-- Note: Compound Interest Calculator, submits to calc.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Multiple Modals</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<!-- Main JS file -->
+	<script src="main.js"></script>
+	<!-- jQuery functions -->
+	<script>
+		// do these when Document is ready
+		$(function() {
+		  openModal();
+		  closeModal();
+		  modalStopProp();
+
+		  /* below are some tests to ensure the correct node are being targeted */
+		  $(".class0").find("div.class1-2[id*=id1]").css("color", "pink");
+		  $(".class0").find("input.class1[id^=id1-]").css({padding:"10px", color:"red"});
+		});
+	</script>
+</head>
+<body>
+	<!-- Test -->
+	<div class="class0">
+		<div class="class1-1">Hello -no id</div>
+		<div class="class1-2" id="id1-1">I'm Pink -id1-1</div>
+		<input class="class1" id="id1-2" type="text" placeholder="id1-2" />
+		<input class="class1" id="id1-3" type="text" placeholder="id1-3" />
+	</div>
+
+	<!-- 3 Sample Modals -->
+	<div class="modal">
+	  <label for="modal-1">
+	    <div class="modal-trigger">Job #1 - Senior Technical Consultant</div>
+	  </label>
+	  <input class="modal-state" id="modal-1" type="checkbox" />
+	  <div class="modal-fade-screen">
+	    <div class="modal-inner">
+	      <div class="modal-close" for="modal-1"></div>
+	      <h1>Senior Technical Consultant</h1>
+	      <p class="modal-intro">Total Compensation $100,000 (Base + Incentive)</p>
+	      <p class="modal-content">Position Overview
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maiores rem dolores modi pariatur commodi, perspiciatis fugiat, eos quos numquam magnam enim voluptas a culpa esse. Distinctio numquam ipsum eaque.
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sit, fugit quibusdam quod quisquam assumenda distinctio libero est consectetur, sed dicta, quos laboriosam nulla asperiores doloremque rem placeat illo velit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maiores rem dolores modi pariatur commodi, perspiciatis fugiat, eos quos numquam magnam enim voluptas a culpa esse. Distinctio numquam ipsum eaque.
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sit, fugit quibusdam quod quisquam assumenda distinctio libero est consectetur, sed dicta, quos laboriosam nulla asperiores doloremque rem placeat illo velit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maiores rem dolores modi pariatur commodi, perspiciatis fugiat, eos quos numquam magnam enim voluptas a culpa esse. Distinctio numquam ipsum eaque.
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sit, fugit quibusdam quod quisquam assumenda distinctio libero est consectetur, sed dicta, quos laboriosam nulla asperiores doloremque rem placeat illo velit.
+			</p>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal">
+	  <label for="modal-2">
+	    <div class="modal-trigger">Job #2 - Account Executive</div>
+	  </label>
+	  <input class="modal-state" id="modal-2" type="checkbox" />
+	  <div class="modal-fade-screen">
+	    <div class="modal-inner">
+	      <div class="modal-close" for="modal-2"></div>
+	      <h1>Account Executive</h1>
+	      <p class="modal-intro">Total Compensation: $100,000 (Base + Incentive) Software Sales Position</p>
+	      <p class="modal-content">Position Overview
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maiores rem dolores modi pariatur commodi, perspiciatis fugiat, eos quos numquam magnam enim voluptas a culpa esse. Distinctio numquam ipsum eaque.
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sit, fugit quibusdam quod quisquam assumenda distinctio libero est consectetur, sed dicta, quos laboriosam nulla asperiores doloremque rem placeat illo velit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maiores rem dolores modi pariatur commodi, perspiciatis fugiat, eos quos numquam magnam enim voluptas a culpa esse. Distinctio numquam ipsum eaque.
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sit, fugit quibusdam quod quisquam assumenda distinctio libero est consectetur, sed dicta, quos laboriosam nulla asperiores doloremque rem placeat illo velit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maiores rem dolores modi pariatur commodi, perspiciatis fugiat, eos quos numquam magnam enim voluptas a culpa esse. Distinctio numquam ipsum eaque.
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sit, fugit quibusdam quod quisquam assumenda distinctio libero est consectetur, sed dicta, quos laboriosam nulla asperiores doloremque rem placeat illo velit.
+			</p>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="modal">
+	  <label for="modal-3">
+	    <div class="modal-trigger">Job #3 - Developer</div>
+	  </label>
+	  <input class="modal-state" id="modal-3" type="checkbox" />
+	  <div class="modal-fade-screen">
+	    <div class="modal-inner">
+	      <div class="modal-close" for="modal-3"></div>
+	      <h1>Developer</h1>
+	      <p class="modal-intro">Total Compensation: $100,000 (Base + Incentive) Software Sales Position</p>
+	      <p class="modal-content">Position Overview
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maiores rem dolores modi pariatur commodi, perspiciatis fugiat, eos quos numquam magnam enim voluptas a culpa esse. Distinctio numquam ipsum eaque.
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sit, fugit quibusdam quod quisquam assumenda distinctio libero est consectetur, sed dicta, quos laboriosam nulla asperiores doloremque rem placeat illo velit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maiores rem dolores modi pariatur commodi, perspiciatis fugiat, eos quos numquam magnam enim voluptas a culpa esse. Distinctio numquam ipsum eaque.
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sit, fugit quibusdam quod quisquam assumenda distinctio libero est consectetur, sed dicta, quos laboriosam nulla asperiores doloremque rem placeat illo velit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maiores rem dolores modi pariatur commodi, perspiciatis fugiat, eos quos numquam magnam enim voluptas a culpa esse. Distinctio numquam ipsum eaque.
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sit, fugit quibusdam quod quisquam assumenda distinctio libero est consectetur, sed dicta, quos laboriosam nulla asperiores doloremque rem placeat illo velit.
+			</p>
+	    </div>
+	  </div>
+	</div>
+
+</body>
+</html>
